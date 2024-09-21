@@ -5,7 +5,7 @@ export default function CoursessElements() {
     <>
     <div className="    ">
         <div className="container space-y-3 ">
-        <h2 className="text-4xl font-bold   text-main">
+        <h2 className="text-3xl font-bold   text-main">
             A broad selection of courses
         </h2>
         <p className=' text-main'>
