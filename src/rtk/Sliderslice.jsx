@@ -5,6 +5,7 @@ const initialState = {
   totalSlides: 3, // عدد الصور
 };
 
+
 const sliderSlice = createSlice({
   name: 'slider',
   initialState,
@@ -15,9 +16,7 @@ const sliderSlice = createSlice({
     prevSlide: (state) => {
       state.currentSlide = (state.currentSlide - 1 + state.totalSlides) % state.totalSlides;
     },
-    // goToSlide: (state, action) => {
-    //   state.currentSlide = action.payload;
-    // },
+   
   },
 });
 
