@@ -17,7 +17,7 @@ function Slider() {
    
     return (
     <>
-            <div className=" w-full h-auto  md:h-96  flex items-center mb-10">
+            <div className=" w-full h-auto  md:h-96  flex items-center mb-14 mt-10">
 {/* Slider Images */}
          <div className=" relative  xl:w-10/12 mx-auto  h-auto overflow-hidden flex ">
 
@@ -35,7 +35,7 @@ function Slider() {
                              
                         />
     
-        <div  className="  md:absolute   md:left-24 md:top-10  m-auto bg-white bg-opacity-80 p-4   rounded-lg md:shadow-lg  w-full md:max-w-sm z-10">
+        <div  className=" hidden  md:block md:absolute   md:left-24 md:top-10  m-auto bg-white bg-opacity-80 p-4   rounded-lg md:shadow-lg  w-full md:max-w-sm z-10">
           <Cardslider />
        </div>
 
@@ -72,6 +72,18 @@ function Slider() {
 </div>
 
  </div>
+
+
+
+
+{/* ui responsive */}
+<div className='mt-10  p-4 md:hidden flex flex-col '>
+    <Cardslider  />
+</div>
+
+
+
+
 
         </>
     );
