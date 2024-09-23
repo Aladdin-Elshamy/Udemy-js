@@ -8,13 +8,23 @@ function Slider() {
     const { currentSlide } = useSelector((state) => state.slider);
 
 
+  
     useEffect(() => {
         const interval = setInterval(() => {
-            dispatch(nextSlide());
+          if (currentSlide === 0) {
+            dispatch(nextSlide()); // 0 → 1
+          } else if (currentSlide === 1) {
+            dispatch(nextSlide()); // 1 → 2
+          } else if (currentSlide === 2) {
+            dispatch(prevSlide()); // 2 → 1
+            setTimeout(() => {
+              dispatch(prevSlide()); // 1 → 0
+            }, 3000); // تأخير للانتقال إلى 0
+          }
         }, 3000); 
-       
-        return () => clearInterval(interval); }
-    )
+    
+        return () => clearInterval(interval); // تنظيف عند إلغاء التركيب
+      }, [currentSlide, dispatch]);
 
     const images = [
         "/images/imag1.jpeg",
