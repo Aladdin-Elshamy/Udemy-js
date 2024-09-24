@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import FilterData from "../../FilterData.json";
-
-import CardUi from "./cardUi";
 import ButtonsUI from "./ButtonsUI";
 
 export default function BoxContent() {
@@ -10,10 +7,11 @@ export default function BoxContent() {
     <>
 
       
-      <div className="Box-content border-2 border-gray-500 p-5 space-y-3 mt-3 flex flex-col  ">
-      <ButtonsUI  />
+      <div className="Box-content  px-5 space-y-3 mt-3 flex flex-col   ">
+      
+      {/* <ButtonsUI  /> */}
 
-        <h2 className="  font-bold text-xl text-main ">
+        <h2 className="  font-bold text-xl text-main  ">
           Expand your career opportunities with Python
         </h2>
         

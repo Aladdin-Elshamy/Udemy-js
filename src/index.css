@@ -7,8 +7,9 @@
 }
 
 .card{
-    height: 400px;
+    height: auto;
     position: relative;
+    height: 400px;
     
 }
 
@@ -18,9 +19,10 @@
     bottom: 0;
     left: 250px;
     opacity: 0;
-    z-index: 9999;    
+    z-index: 99999;    
 }
 
 .items-card:hover .details{
     opacity: 1;
+    
 }

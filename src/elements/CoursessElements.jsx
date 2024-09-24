@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonsUI from '../ui/CorursessUi/ButtonsUI'
 
 export default function CoursessElements() {
   return (
@@ -11,6 +12,7 @@ export default function CoursessElements() {
         <p className=' text-main'>
             Choose from over 250,000 online video courses with new additions published every month
         </p>
+
         </div>
        
     </div>
