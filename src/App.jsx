@@ -1,15 +1,11 @@
-
-import './App.css'
-import Slider from './components/Slider'
-import Logos from './ui/Logos'
+import "./App.css";
+import Home from "./pages/Home";
 function App() {
-  
   return (
     <>
-       <Slider />
-       <Logos />
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

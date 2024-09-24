@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   currentSlide: 0,
@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const sliderSlice = createSlice({
-  name: 'slider',
+  name: "slider",
   initialState,
   reducers: {
     nextSlide: (state) => {
