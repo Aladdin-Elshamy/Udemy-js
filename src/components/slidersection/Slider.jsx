@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import { nextSlide, prevSlide } from "../rtk/Sliderslice";
+import { nextSlide, prevSlide } from "../../rtk/Sliderslice";
 import { useEffect } from "react";
-import Cardslidercontent from "../ui/Cardslidercontent";
-import { images, slideContents } from "../data/Sliderdata";
+import Cardslidercontent from "../../ui/Cardslidercontent";
+import { images, slideContents } from "../../data/Sliderdata";
 function Slider() {
   const dispatch = useDispatch();
   const { currentSlide } = useSelector((state) => state.slider);
