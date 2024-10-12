@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.items-card{
+
+}
+
+.card{
+    height: auto;
+    position: relative;
+    height: 400px;
+    
+}
+
+.details{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 250px;
+    opacity: 0;
+    z-index: 99999;    
+}
+
+.items-card:hover .details{
+    opacity: 1;
+    
+}
